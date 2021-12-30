@@ -1,0 +1,10 @@
+    body {
+        text-align: center;
+    }
+    
+    #engInput {
+        margin: 2rem;
+        margin-left: 35rem;
+        text-align: center;
+        display: block;
+    }
