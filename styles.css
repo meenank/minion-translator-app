@@ -1,15 +1,32 @@
-    body {
-        text-align: center;
-    }
-    
-    #engInput {
-        width: 30rem;
-        margin: auto;
-        text-align: center;
-        display: block;
-        padding: 1rem;
-    }
-    
-    button {
-        margin: 1rem;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+body {
+    text-align: center;
+    font-family: 'Handlee';
+}
+
+#engInput {
+    padding: 2rem;
+    max-width: 50%;
+    margin: auto;
+    display: block;
+}
+
+button {
+    display: block;
+    max-width: 5rem;
+    margin: auto;
+    /* margin: 2rem 20rem 2rem 45rem; */
+}
+
+#output {
+    border: 2px solid skyblue;
+    height: 10rem;
+    max-width: 30%;
+    margin: auto;
+    text-align: justify;
+    padding: 2rem;
+}
+
+#textRef {
+    margin: 2rem;
+}
