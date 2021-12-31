@@ -50,6 +50,7 @@ button {
     background-color: rgba(48, 56, 70, 0.45);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
+    font-size: 2rem;
 }
 
 #textRef {
