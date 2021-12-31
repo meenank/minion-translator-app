@@ -7,7 +7,7 @@ var serverUrl = "https://api.funtranslations.com/translate/minion.json";
 // error handling if nothing gets back from server
 function erorHandler(error) {
     console.log("Error occured on server end!", error)
-    alert("error occured on server end, pleae try after some time")
+    alert("this server has limit of 5 requests per hour so if u think u crossed it, try changing your country with a vpn and it will work!")
 }
 
 function clickRes() {
