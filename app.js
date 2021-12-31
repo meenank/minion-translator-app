@@ -4,18 +4,25 @@ var txtOut = document.querySelector("#output");
 
 var serverUrl = "https://api.funtranslations.com/translate/minion.json";
 
+// error handling if nothing gets back from server
+function erorHandler(error) {
+    console.log("Error occured on server end!", error)
+    alert("error occured on server end, pleae try after some time")
+}
+
 function clickRes() {
     // console.log("button clicked")
     // console.log(txtInp.value);
     // txtOut.innerHTML = txtInp.value;
 
-    var enteredText = txtInp.value;
-    fetch(serverUrl + "?text=" + enteredText)
+    var enteredText = txtInp.value; // take input text value
+    fetch(serverUrl + "?text=" + enteredText) // added input to server url for fetch
         .then(Response => Response.json())
         .then(json => {
             var translatedText = json.contents.translated;
             txtOut.innerHTML = translatedText
         })
+        .catch(erorHandler)
 
 
 }
